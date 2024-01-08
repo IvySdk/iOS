@@ -5,7 +5,7 @@
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
-@version = '8.6.9.1'
+@version = '8.7.0'
 Pod::Spec.new do |s|
   s.name             = 'IvyiOSSdk'
   s.version          = @version

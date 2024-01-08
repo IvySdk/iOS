@@ -1,6 +1,0 @@
-framework module IvyiOSSdk {
-  umbrella header "IvyiOSSdk-umbrella.h"
-
-  export *
-  module * { export * }
-}

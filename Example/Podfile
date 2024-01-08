@@ -10,19 +10,19 @@ use_modular_headers!
 mytarget = 'IvyiOSSdk'
 target mytarget do
 
-  pod 'IvyiOSSdk/Core', :path => '../'
-  pod 'IvyiOSSdk/Firebase', :path => '../'
-  pod 'IvyiOSSdk/Firebase+', :path => '../'
+  pod 'IvyiOSSdk/Core', :path => 'git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
+  pod 'IvyiOSSdk/Firebase', :path => 'git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
+  pod 'IvyiOSSdk/Firebase+', :path => 'git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
  # pod 'IvyiOSSdk/FacebookSNS', :path => '../'
  # pod 'IvyiOSSdk/Applovin', :path => '../'
-  pod 'IvyiOSSdk/Google', :path => '../'
+  pod 'IvyiOSSdk/Google', :path => 'git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
   #pod 'IvyiOSSdk/Max', :path => '../'
  # pod 'IvyiOSSdk/Pangle', :path => '../'
  # pod 'IvyiOSSdk/Yandex', :path => '../'
-  pod 'IvyiOSSdk/Appsflyer', :path => '../'
+  pod 'IvyiOSSdk/Appsflyer', :path => 'git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
  # pod 'IvyiOSSdk/ThirdLogin', :path => '../'
  # pod 'IvyiOSSdk/GDT', :path => '../'
-  pod 'IvyiOSSdk/AIHelp', :path => '../'
+  pod 'IvyiOSSdk/AIHelp', :path => '.git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
 end
 post_install do |installer|
     # Get main project development team id
