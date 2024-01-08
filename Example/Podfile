@@ -8,21 +8,22 @@ required_frameworks = []
 use_frameworks!
 use_modular_headers!
 mytarget = 'IvyiOSSdk'
+@tag = '8.7.0'
 target mytarget do
 
-  pod 'IvyiOSSdk/Core', :path => 'git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
-  pod 'IvyiOSSdk/Firebase', :path => 'git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
-  pod 'IvyiOSSdk/Firebase+', :path => 'git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
+  pod 'IvyiOSSdk/Core', :git => 'git@github.com:IvySdk/iOS.git', :tag=>@tag
+  pod 'IvyiOSSdk/Firebase', :git => 'git@github.com:IvySdk/iOS.git', :tag=>@tag
+  pod 'IvyiOSSdk/Firebase+', :git => 'git@github.com:IvySdk/iOS.git', :tag=>@tag
  # pod 'IvyiOSSdk/FacebookSNS', :path => '../'
  # pod 'IvyiOSSdk/Applovin', :path => '../'
-  pod 'IvyiOSSdk/Google', :path => 'git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
+  pod 'IvyiOSSdk/Google', :git => 'git@github.com:IvySdk/iOS.git', :tag=>@tag
   #pod 'IvyiOSSdk/Max', :path => '../'
  # pod 'IvyiOSSdk/Pangle', :path => '../'
  # pod 'IvyiOSSdk/Yandex', :path => '../'
-  pod 'IvyiOSSdk/Appsflyer', :path => 'git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
+  pod 'IvyiOSSdk/Appsflyer', :git => 'git@github.com:IvySdk/iOS.git', :tag=>@tag
  # pod 'IvyiOSSdk/ThirdLogin', :path => '../'
  # pod 'IvyiOSSdk/GDT', :path => '../'
-  pod 'IvyiOSSdk/AIHelp', :path => '.git@github.com:IvySdk/iOS.git', tag=>'8.7.0'
+  pod 'IvyiOSSdk/AIHelp', :git => 'git@github.com:IvySdk/iOS.git', :tag=>@tag
 end
 post_install do |installer|
     # Get main project development team id
