@@ -1,0 +1,1219 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E0CDB7324206DED003082D8 /* sdk_cg.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E0CDB6F24206DED003082D8 /* sdk_cg.json */; };
+		0E0CDB7424206DED003082D8 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E0CDB7024206DED003082D8 /* default.json */; };
+		0E12F378253D77F7003FEB5E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E12F377253D77F7003FEB5E /* File.swift */; };
+		0E68BB73243C7990007EF15C /* SDKFacadeUnity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0E68BB72243C7990007EF15C /* SDKFacadeUnity.mm */; };
+		0E846373254BF215001A15AD /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 0E846371254BF215001A15AD /* privacy.html */; };
+		0E846374254BF215001A15AD /* user_agreement.html in Resources */ = {isa = PBXBuildFile; fileRef = 0E846372254BF215001A15AD /* user_agreement.html */; };
+		0ECDBFB72455B51F00CD1BE5 /* IvyiOSSdk.podspec.update in Resources */ = {isa = PBXBuildFile; fileRef = 0ECDBFB62455B51F00CD1BE5 /* IvyiOSSdk.podspec.update */; };
+		0EEC4FDF230FC714009A0EC4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEC4FDE230FC714009A0EC4 /* Photos.framework */; };
+		0EEEA180243334C600284D59 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEEA17F243334C600284D59 /* StoreKit.framework */; };
+		2405808A2043ED090052A974 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 240580892043ED090052A974 /* bg.png */; };
+		240580912043FB8A0052A974 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2405808E2043FB8A0052A974 /* bg2.png */; };
+		240580922043FB8A0052A974 /* bt2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2405808F2043FB8A0052A974 /* bt2.png */; };
+		240580932043FB8A0052A974 /* native2.json in Resources */ = {isa = PBXBuildFile; fileRef = 240580902043FB8A0052A974 /* native2.json */; };
+		24058098204787100052A974 /* UnifiedNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24058097204787100052A974 /* UnifiedNativeAdView.xib */; };
+		2458573520414C4C00FCD5E1 /* native.json in Resources */ = {isa = PBXBuildFile; fileRef = 2458573420414C4C00FCD5E1 /* native.json */; };
+		2458573A2042A5DF00FCD5E1 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 245857372042A5DE00FCD5E1 /* close.png */; };
+		2458573C2042A5DF00FCD5E1 /* huaanniu.png in Resources */ = {isa = PBXBuildFile; fileRef = 245857392042A5DF00FCD5E1 /* huaanniu.png */; };
+		2462E40320CF5D0D00666705 /* bannerIconSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 2462E40220CF5D0D00666705 /* bannerIconSelect.png */; };
+		246B28DC20CB758500D7A06B /* bannerBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 246B28DA20CB758500D7A06B /* bannerBg.png */; };
+		246B28DD20CB758500D7A06B /* bannerIconFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 246B28DB20CB758500D7A06B /* bannerIconFrame.png */; };
+		246B28E120CC099B00D7A06B /* delicious.json in Resources */ = {isa = PBXBuildFile; fileRef = 246B28E020CC099B00D7A06B /* delicious.json */; };
+		247A0B1B2022DFDC00C35E70 /* MyOurNativeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247A0B172022DFDC00C35E70 /* MyOurNativeView.xib */; };
+		247A0B1C2022DFDC00C35E70 /* MyFacebookNativeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247A0B182022DFDC00C35E70 /* MyFacebookNativeView.xib */; };
+		247A0B202022E03A00C35E70 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247A0B1E2022E03A00C35E70 /* ViewController_iPad.xib */; };
+		247A0B212022E03A00C35E70 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247A0B1F2022E03A00C35E70 /* ViewController_iPhone.xib */; };
+		247A0B252022E04A00C35E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 247A0B232022E04A00C35E70 /* GoogleService-Info.plist */; };
+		247A0B332022EB8600C35E70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 247A0B312022EB8600C35E70 /* InfoPlist.strings */; };
+		247F0FDC20A5AA6F00B8C54A /* ad.png in Resources */ = {isa = PBXBuildFile; fileRef = 247F0FDB20A5AA6E00B8C54A /* ad.png */; };
+		249E12A2206385CB00C824E9 /* bt2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 249E12A1206385CA00C824E9 /* bt2.gif */; };
+		54849767A2A0D2BC6E83B00C /* Pods_IvyiOSSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454B4D94E21A8B5251416BD5 /* Pods_IvyiOSSdk.framework */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* SDKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* SDKAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* SDKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* SDKViewController.mm */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
+		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		AC243D57C695A6A57AEE4927 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08B895EF032EFDE5351BA9E /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = IvyiOSSdk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E0CDB6F24206DED003082D8 /* sdk_cg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sdk_cg.json; sourceTree = "<group>"; };
+		0E0CDB7024206DED003082D8 /* default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
+		0E12F377253D77F7003FEB5E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		0E472BA422CAF9D500ADE6F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		0E4A44CF24AA098B00ED2AA8 /* IvyiOSSdk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IvyiOSSdk-Bridging-Header.h"; sourceTree = "<group>"; };
+		0E68BB71243C7990007EF15C /* SDKFacadeUnity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDKFacadeUnity.h; path = "../ios-build-copy-sources/unity/SDKFacadeUnity.h"; sourceTree = "<group>"; };
+		0E68BB72243C7990007EF15C /* SDKFacadeUnity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SDKFacadeUnity.mm; path = "../ios-build-copy-sources/unity/SDKFacadeUnity.mm"; sourceTree = "<group>"; };
+		0E6F0B8E2612D7CB00E08233 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		0E818241256D106F004B5891 /* IvyiOSSdk.podspec.bak */ = {isa = PBXFileReference; lastKnownFileType = text; name = IvyiOSSdk.podspec.bak; path = ../IvyiOSSdk.podspec.bak; sourceTree = "<group>"; };
+		0E846371254BF215001A15AD /* privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		0E846372254BF215001A15AD /* user_agreement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = user_agreement.html; sourceTree = "<group>"; };
+		0E8E5352229FBF2700EBB56B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0E8E5354229FBF2E00EBB56B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0E8E5356229FBF3900EBB56B /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		0ECDBFB62455B51F00CD1BE5 /* IvyiOSSdk.podspec.update */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IvyiOSSdk.podspec.update; path = ../IvyiOSSdk.podspec.update; sourceTree = "<group>"; };
+		0EEC4FDE230FC714009A0EC4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		0EEC4FE0230FC827009A0EC4 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		0EEC4FE2230FC837009A0EC4 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		0EEEA17E2431F2A100284D59 /* IvyiOSSdk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = IvyiOSSdk.entitlements; path = IvyiOSSdk/IvyiOSSdk.entitlements; sourceTree = "<group>"; };
+		0EEEA17F243334C600284D59 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		240580892043ED090052A974 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		2405808E2043FB8A0052A974 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
+		2405808F2043FB8A0052A974 /* bt2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt2.png; sourceTree = "<group>"; };
+		240580902043FB8A0052A974 /* native2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = native2.json; sourceTree = "<group>"; };
+		24058097204787100052A974 /* UnifiedNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnifiedNativeAdView.xib; sourceTree = "<group>"; };
+		2458573420414C4C00FCD5E1 /* native.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = native.json; sourceTree = "<group>"; };
+		245857372042A5DE00FCD5E1 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		245857392042A5DF00FCD5E1 /* huaanniu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huaanniu.png; sourceTree = "<group>"; };
+		2462E40220CF5D0D00666705 /* bannerIconSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerIconSelect.png; sourceTree = "<group>"; };
+		246B28DA20CB758500D7A06B /* bannerBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerBg.png; sourceTree = "<group>"; };
+		246B28DB20CB758500D7A06B /* bannerIconFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerIconFrame.png; sourceTree = "<group>"; };
+		246B28E020CC099B00D7A06B /* delicious.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = delicious.json; sourceTree = "<group>"; };
+		247A0B172022DFDC00C35E70 /* MyOurNativeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOurNativeView.xib; sourceTree = "<group>"; };
+		247A0B182022DFDC00C35E70 /* MyFacebookNativeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyFacebookNativeView.xib; sourceTree = "<group>"; };
+		247A0B1E2022E03A00C35E70 /* ViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_iPad.xib; sourceTree = "<group>"; };
+		247A0B1F2022E03A00C35E70 /* ViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_iPhone.xib; sourceTree = "<group>"; };
+		247A0B232022E04A00C35E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		247A0B262022E08500C35E70 /* IvyiOSSdk_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IvyiOSSdk_Example.entitlements; sourceTree = "<group>"; };
+		247A0B2F2022E12A00C35E70 /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		247A0B322022EB8600C35E70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = IvyiOSSdk/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		247A0B342022EB8A00C35E70 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "IvyiOSSdk/zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		247F0FDB20A5AA6E00B8C54A /* ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad.png; sourceTree = "<group>"; };
+		249E12A1206385CA00C824E9 /* bt2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bt2.gif; sourceTree = "<group>"; };
+		24C62EB3E436D3451A20FA98 /* Pods-IvyiOSSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IvyiOSSdk.debug.xcconfig"; path = "Target Support Files/Pods-IvyiOSSdk/Pods-IvyiOSSdk.debug.xcconfig"; sourceTree = "<group>"; };
+		28DA493E6A01882C723B5963 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		454B4D94E21A8B5251416BD5 /* Pods_IvyiOSSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IvyiOSSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1E6556BDAEC360A0E21F73 /* Pods-IvyiOSSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IvyiOSSdk.release.xcconfig"; path = "Target Support Files/Pods-IvyiOSSdk/Pods-IvyiOSSdk.release.xcconfig"; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* IvyiOSSdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IvyiOSSdk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* IvyiOSSdk.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IvyiOSSdk.pch; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* SDKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* SDKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* SDKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* SDKViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SDKViewController.mm; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AE195388D20070C39A /* IvyiOSSdk_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IvyiOSSdk_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		716ACB0B4EA5D2E38828F574 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		98338BAC7B96008441ECCCA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		99FB7D1BDA4DCF86E8A632FB /* IvyiOSSdk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IvyiOSSdk.podspec; path = ../IvyiOSSdk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C1B1CC1FC9A7E7D246BD1D6D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D84EE6B32AEAC6651BE0CB35 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		ECA15AE850CBC2345E50B30F /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		F08B895EF032EFDE5351BA9E /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		F5B743ACB3B88316DD598C51 /* AdServices */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AdServices; path = System/Library/Frameworks/AdServices; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EEC4FDF230FC714009A0EC4 /* Photos.framework in Frameworks */,
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				0EEEA180243334C600284D59 /* StoreKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				AC243D57C695A6A57AEE4927 /* AdServices.framework in Frameworks */,
+				54849767A2A0D2BC6E83B00C /* Pods_IvyiOSSdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AB195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
+				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E0CDB6D24206DED003082D8 /* conf */ = {
+			isa = PBXGroup;
+			children = (
+				0E0CDB6F24206DED003082D8 /* sdk_cg.json */,
+				0E0CDB7024206DED003082D8 /* default.json */,
+			);
+			path = conf;
+			sourceTree = "<group>";
+		};
+		2405808D2043F96C0052A974 /* native2 */ = {
+			isa = PBXGroup;
+			children = (
+				249E12A1206385CA00C824E9 /* bt2.gif */,
+				2405808E2043FB8A0052A974 /* bg2.png */,
+				2405808F2043FB8A0052A974 /* bt2.png */,
+				240580902043FB8A0052A974 /* native2.json */,
+			);
+			path = native2;
+			sourceTree = "<group>";
+		};
+		2458573620429E4900FCD5E1 /* native */ = {
+			isa = PBXGroup;
+			children = (
+				247F0FDB20A5AA6E00B8C54A /* ad.png */,
+				240580892043ED090052A974 /* bg.png */,
+				245857372042A5DE00FCD5E1 /* close.png */,
+				245857392042A5DF00FCD5E1 /* huaanniu.png */,
+				2458573420414C4C00FCD5E1 /* native.json */,
+			);
+			path = native;
+			sourceTree = "<group>";
+		};
+		246B28D920CB758500D7A06B /* delicious */ = {
+			isa = PBXGroup;
+			children = (
+				246B28E020CC099B00D7A06B /* delicious.json */,
+				246B28DA20CB758500D7A06B /* bannerBg.png */,
+				2462E40220CF5D0D00666705 /* bannerIconSelect.png */,
+				246B28DB20CB758500D7A06B /* bannerIconFrame.png */,
+			);
+			path = delicious;
+			sourceTree = "<group>";
+		};
+		247A0B142022DFDC00C35E70 /* MyNativeXibs */ = {
+			isa = PBXGroup;
+			children = (
+				24058097204787100052A974 /* UnifiedNativeAdView.xib */,
+				247A0B172022DFDC00C35E70 /* MyOurNativeView.xib */,
+				247A0B182022DFDC00C35E70 /* MyFacebookNativeView.xib */,
+			);
+			path = MyNativeXibs;
+			sourceTree = "<group>";
+		};
+		247A0B1D2022E03A00C35E70 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				247A0B1E2022E03A00C35E70 /* ViewController_iPad.xib */,
+				247A0B1F2022E03A00C35E70 /* ViewController_iPhone.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				0E846371254BF215001A15AD /* privacy.html */,
+				0E846372254BF215001A15AD /* user_agreement.html */,
+				0E12F377253D77F7003FEB5E /* File.swift */,
+				0EEEA17E2431F2A100284D59 /* IvyiOSSdk.entitlements */,
+				0E0CDB6D24206DED003082D8 /* conf */,
+				246B28D920CB758500D7A06B /* delicious */,
+				2405808D2043F96C0052A974 /* native2 */,
+				2458573620429E4900FCD5E1 /* native */,
+				247A0B312022EB8600C35E70 /* InfoPlist.strings */,
+				247A0B262022E08500C35E70 /* IvyiOSSdk_Example.entitlements */,
+				247A0B232022E04A00C35E70 /* GoogleService-Info.plist */,
+				247A0B1D2022E03A00C35E70 /* xibs */,
+				247A0B142022DFDC00C35E70 /* MyNativeXibs */,
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				9EE9B8CBA2D59539B11402F8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* IvyiOSSdk.app */,
+				6003F5AE195388D20070C39A /* IvyiOSSdk_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E6F0B8E2612D7CB00E08233 /* AdServices.framework */,
+				0EEEA17F243334C600284D59 /* StoreKit.framework */,
+				0EEC4FE2230FC837009A0EC4 /* libiconv.tbd */,
+				0EEC4FE0230FC827009A0EC4 /* libbz2.tbd */,
+				0EEC4FDE230FC714009A0EC4 /* Photos.framework */,
+				0E8E5356229FBF3900EBB56B /* libresolv.9.tbd */,
+				0E8E5354229FBF2E00EBB56B /* libc++.tbd */,
+				0E8E5352229FBF2700EBB56B /* libz.tbd */,
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				F5B743ACB3B88316DD598C51 /* AdServices */,
+				716ACB0B4EA5D2E38828F574 /* AdServices.framework */,
+				28DA493E6A01882C723B5963 /* AdServices.framework */,
+				D84EE6B32AEAC6651BE0CB35 /* AdServices.framework */,
+				ECA15AE850CBC2345E50B30F /* AdServices.framework */,
+				F08B895EF032EFDE5351BA9E /* AdServices.framework */,
+				454B4D94E21A8B5251416BD5 /* Pods_IvyiOSSdk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				6003F59C195388D20070C39A /* SDKAppDelegate.h */,
+				6003F59D195388D20070C39A /* SDKAppDelegate.m */,
+				6003F5A5195388D20070C39A /* SDKViewController.h */,
+				6003F5A6195388D20070C39A /* SDKViewController.mm */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			name = Example;
+			path = IvyiOSSdk;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E472BA422CAF9D500ADE6F6 /* Info.plist */,
+				247A0B2F2022E12A00C35E70 /* define.h */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F59B195388D20070C39A /* IvyiOSSdk.pch */,
+				0E4A44CF24AA098B00ED2AA8 /* IvyiOSSdk-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				0E818241256D106F004B5891 /* IvyiOSSdk.podspec.bak */,
+				0ECDBFB62455B51F00CD1BE5 /* IvyiOSSdk.podspec.update */,
+				0E68BB71243C7990007EF15C /* SDKFacadeUnity.h */,
+				0E68BB72243C7990007EF15C /* SDKFacadeUnity.mm */,
+				99FB7D1BDA4DCF86E8A632FB /* IvyiOSSdk.podspec */,
+				C1B1CC1FC9A7E7D246BD1D6D /* README.md */,
+				98338BAC7B96008441ECCCA5 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		9EE9B8CBA2D59539B11402F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24C62EB3E436D3451A20FA98 /* Pods-IvyiOSSdk.debug.xcconfig */,
+				5C1E6556BDAEC360A0E21F73 /* Pods-IvyiOSSdk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* IvyiOSSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "IvyiOSSdk" */;
+			buildPhases = (
+				EA1804B655F840959E6906B0 /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				A89EACCF4C29D4657C381038 /* [CP] Copy Pods Resources */,
+				A25809538EEAD8E7502EFE1C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IvyiOSSdk;
+			productName = IvyiOSSdk;
+			productReference = 6003F58A195388D20070C39A /* IvyiOSSdk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003F5AD195388D20070C39A /* IvyiOSSdk_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "IvyiOSSdk_Tests" */;
+			buildPhases = (
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+			);
+			name = IvyiOSSdk_Tests;
+			productName = IvyiOSSdkTests;
+			productReference = 6003F5AE195388D20070C39A /* IvyiOSSdk_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SDK;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = IceStar;
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = WDVZ69T37C;
+						LastSwiftMigration = 1150;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.GameCenter.iOS = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "IvyiOSSdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* IvyiOSSdk */,
+				6003F5AD195388D20070C39A /* IvyiOSSdk_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246B28E120CC099B00D7A06B /* delicious.json in Resources */,
+				0ECDBFB72455B51F00CD1BE5 /* IvyiOSSdk.podspec.update in Resources */,
+				246B28DD20CB758500D7A06B /* bannerIconFrame.png in Resources */,
+				247A0B1B2022DFDC00C35E70 /* MyOurNativeView.xib in Resources */,
+				0E846374254BF215001A15AD /* user_agreement.html in Resources */,
+				246B28DC20CB758500D7A06B /* bannerBg.png in Resources */,
+				2458573520414C4C00FCD5E1 /* native.json in Resources */,
+				0E0CDB7424206DED003082D8 /* default.json in Resources */,
+				0E0CDB7324206DED003082D8 /* sdk_cg.json in Resources */,
+				2458573C2042A5DF00FCD5E1 /* huaanniu.png in Resources */,
+				2458573A2042A5DF00FCD5E1 /* close.png in Resources */,
+				240580912043FB8A0052A974 /* bg2.png in Resources */,
+				2405808A2043ED090052A974 /* bg.png in Resources */,
+				247A0B1C2022DFDC00C35E70 /* MyFacebookNativeView.xib in Resources */,
+				247A0B252022E04A00C35E70 /* GoogleService-Info.plist in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				240580932043FB8A0052A974 /* native2.json in Resources */,
+				240580922043FB8A0052A974 /* bt2.png in Resources */,
+				247A0B202022E03A00C35E70 /* ViewController_iPad.xib in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				247A0B332022EB8600C35E70 /* InfoPlist.strings in Resources */,
+				2462E40320CF5D0D00666705 /* bannerIconSelect.png in Resources */,
+				249E12A2206385CB00C824E9 /* bt2.gif in Resources */,
+				247A0B212022E03A00C35E70 /* ViewController_iPhone.xib in Resources */,
+				0E846373254BF215001A15AD /* privacy.html in Resources */,
+				247F0FDC20A5AA6F00B8C54A /* ad.png in Resources */,
+				24058098204787100052A974 /* UnifiedNativeAdView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AC195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A25809538EEAD8E7502EFE1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IvyiOSSdk/Pods-IvyiOSSdk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseABTesting/FirebaseABTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAppCheckInterop/FirebaseAppCheckInterop.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAuthInterop/FirebaseAuthInterop.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreExtension/FirebaseCoreExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCrashlytics/FirebaseCrashlytics.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseDatabase/FirebaseDatabase.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseFirestore/FirebaseFirestore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseFirestoreInternal/FirebaseFirestoreInternal.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseFunctions/FirebaseFunctions.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInAppMessaging/FirebaseInAppMessaging.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseMessaging/FirebaseMessaging.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseMessagingInterop/FirebaseMessagingInterop.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseRemoteConfig/FirebaseRemoteConfig.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseSessions/FirebaseSessions.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseSharedSwift/FirebaseSharedSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
+				"${BUILT_PRODUCTS_DIR}/RecaptchaInterop/RecaptchaInterop.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/abseil/absl.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework/FBAEMKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/FBSDKCoreKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework/FBSDKCoreKit_Basics",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/FBSDKLoginKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKShareKit/FBSDKShareKit.framework/FBSDKShareKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Fyber_Marketplace_SDK/IASDKCore.framework/IASDKCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenWrapSDK/OpenWrap/OMSDK_Pubmatic.framework/OMSDK_Pubmatic",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/OpenMeasurement/OMSDK_Smaato.framework/OMSDK_Smaato",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseABTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAppCheckInterop.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuthInterop.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreInternal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCrashlytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseDatabase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseFirestore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseFirestoreInternal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseFunctions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInAppMessaging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseMessaging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseMessagingInterop.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseRemoteConfig.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseSessions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseSharedSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RecaptchaInterop.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/absl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAEMKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit_Basics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IASDKCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Pubmatic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Smaato.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IvyiOSSdk/Pods-IvyiOSSdk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A89EACCF4C29D4657C381038 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IvyiOSSdk/Pods-IvyiOSSdk-resources.sh",
+				"${PODS_ROOT}/AIHelpSDK/AIHelpSDK/AIHelpSupportSDK.bundle",
+				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-12.1.0/AppLovinSDKResources.bundle",
+				"${PODS_ROOT}/ChartboostSDK/ChartboostSDKResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/IvyiOSSdk/IvyiOSSdk-Core.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/IvyiOSSdk/IvyiOSSdk-Admob.bundle",
+				"${PODS_ROOT}/OpenWrapSDK/OpenWrapSDK/POBResources.bundle",
+				"${PODS_ROOT}/OpenWrapSDK/OpenWrapSDK/POBNativeResources.bundle",
+				"${PODS_ROOT}/OpenWrapSDK/OpenWrapSDK/OpenWrapSDKPrivacyManifest.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AIHelpSupportSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppLovinSDKResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ChartboostSDKResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IvyiOSSdk-Core.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IvyiOSSdk-Admob.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/POBResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/POBNativeResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OpenWrapSDKPrivacyManifest.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IvyiOSSdk/Pods-IvyiOSSdk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA1804B655F840959E6906B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IvyiOSSdk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E12F378253D77F7003FEB5E /* File.swift in Sources */,
+				0E68BB73243C7990007EF15C /* SDKFacadeUnity.mm in Sources */,
+				6003F59E195388D20070C39A /* SDKAppDelegate.m in Sources */,
+				6003F5A7195388D20070C39A /* SDKViewController.mm in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AA195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* IvyiOSSdk */;
+			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		247A0B312022EB8600C35E70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				247A0B322022EB8600C35E70 /* en */,
+				247A0B342022EB8A00C35E70 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C62EB3E436D3451A20FA98 /* Pods-IvyiOSSdk.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = IvyiOSSdk/IvyiOSSdk.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = WDVZ69T37C;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AdColony\"",
+					"\"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-6.11.4\"",
+					"\"${PODS_ROOT}/ChartboostSDK\"",
+					"\"${PODS_ROOT}/Crashlytics/iOS\"",
+					"\"${PODS_ROOT}/FBAudienceNetwork/Static\"",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationAdColony/AdColonyAdapter-4.1.3.1\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationAppLovin/AppLovinAdapter-6.11.4.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationChartboost/ChartboostAdapter-8.0.4.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationFacebook/FacebookAdapter-5.7.0.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationInMobi/InMobiAdapter-9.0.0.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationIronSource/IronSourceAdapter-6.13.0.1.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationTestSuite/Framework\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationUnity/UnityAdapter-3.4.2.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationVungle/VungleAdapter-6.4.6.0\"",
+					"\"${PODS_ROOT}/InMobiSDK\"",
+					"\"${PODS_ROOT}/IronSourceSDK/IronSource\"",
+					"\"${PODS_ROOT}/UMengAnalytics-NO-IDFA/umsdk_IOS_analyics_no-idfa_v4.2.5\"",
+					"\"${PODS_ROOT}/UnityAds\"",
+					"\"${PODS_ROOT}/VungleSDK-iOS\"",
+					"\"$(PODS_ROOT)/AdColony\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IvyiOSSdk/IvyiOSSdk.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/BGFMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/EasyShowView\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKCoreKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKLoginKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKShareKit\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseABTesting\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalyticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnostics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstallations\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseMessaging\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseRemoteConfig\"",
+					"\"${PODS_ROOT}/Headers/Public/FlatUIKit\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleDataTransport\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/IvyiOSSdk\"",
+					"\"${PODS_ROOT}/Headers/Public/MDFInternationalization\"",
+					"\"${PODS_ROOT}/Headers/Public/MDFTextAccessibility\"",
+					"\"${PODS_ROOT}/Headers/Public/MaterialComponents\"",
+					"\"${PODS_ROOT}/Headers/Public/PersonalizedAdConsent\"",
+					"\"${PODS_ROOT}/Headers/Public/PromisesObjC\"",
+					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
+					"\"${PODS_ROOT}/Headers/Public/nanopb\"",
+					"$(SDKROOT)/usr/lib／libsqlite3.dylib",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = IvyiOSSdk;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Some ad content may access apple music";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Some ad content may create a calendar event.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Some ad content may access camera to take picture.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Some ad content may access apple contacts";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Some ad content may access location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Some ad content may access location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Some ad content may access location";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Some ad content may access microphone";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Some ad content may access motion";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Some ad content may require access to the photo library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Some ad content may require access to the photo library.";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Some ad content may access reminders";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This only uses device info for more interesting and relevant ads.";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = gamekit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BGFMDB\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/EasyShowView\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseABTesting\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseRemoteConfig\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlatUIKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IvyiOSSdk\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MDFInternationalization\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MDFTextAccessibility\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PersonalizedAdConsent\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/../../IvyiOSSdk/Libraries\"",
+					"\"$(PODS_ROOT)/UMengAnalytics-NO-IDFA/**\"",
+				);
+				MARKETING_VERSION = 1.0.0;
+				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-l\"resolv.9\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"AVKit\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GameController\"",
+					"-framework",
+					"\"GameKit\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.ivy.sdkww;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "IvyiOSSdk/IvyiOSSdk-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "$(inherited)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1E6556BDAEC360A0E21F73 /* Pods-IvyiOSSdk.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = IvyiOSSdk/IvyiOSSdk.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = WDVZ69T37C;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AdColony\"",
+					"\"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-6.11.4\"",
+					"\"${PODS_ROOT}/ChartboostSDK\"",
+					"\"${PODS_ROOT}/Crashlytics/iOS\"",
+					"\"${PODS_ROOT}/FBAudienceNetwork/Static\"",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationAdColony/AdColonyAdapter-4.1.3.1\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationAppLovin/AppLovinAdapter-6.11.4.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationChartboost/ChartboostAdapter-8.0.4.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationFacebook/FacebookAdapter-5.7.0.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationInMobi/InMobiAdapter-9.0.0.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationIronSource/IronSourceAdapter-6.13.0.1.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationTestSuite/Framework\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationUnity/UnityAdapter-3.4.2.0\"",
+					"\"${PODS_ROOT}/GoogleMobileAdsMediationVungle/VungleAdapter-6.4.6.0\"",
+					"\"${PODS_ROOT}/InMobiSDK\"",
+					"\"${PODS_ROOT}/IronSourceSDK/IronSource\"",
+					"\"${PODS_ROOT}/UMengAnalytics-NO-IDFA/umsdk_IOS_analyics_no-idfa_v4.2.5\"",
+					"\"${PODS_ROOT}/UnityAds\"",
+					"\"${PODS_ROOT}/VungleSDK-iOS\"",
+					"\"$(PODS_ROOT)/AdColony\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IvyiOSSdk/IvyiOSSdk.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/BGFMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/EasyShowView\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKCoreKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKLoginKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKShareKit\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseABTesting\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalyticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnostics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstallations\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseMessaging\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseRemoteConfig\"",
+					"\"${PODS_ROOT}/Headers/Public/FlatUIKit\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleDataTransport\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/IvyiOSSdk\"",
+					"\"${PODS_ROOT}/Headers/Public/MDFInternationalization\"",
+					"\"${PODS_ROOT}/Headers/Public/MDFTextAccessibility\"",
+					"\"${PODS_ROOT}/Headers/Public/MaterialComponents\"",
+					"\"${PODS_ROOT}/Headers/Public/PersonalizedAdConsent\"",
+					"\"${PODS_ROOT}/Headers/Public/PromisesObjC\"",
+					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
+					"\"${PODS_ROOT}/Headers/Public/nanopb\"",
+					"$(SDKROOT)/usr/lib／libsqlite3.dylib",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = IvyiOSSdk;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Some ad content may access apple music";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Some ad content may create a calendar event.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Some ad content may access camera to take picture.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Some ad content may access apple contacts";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Some ad content may access location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Some ad content may access location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Some ad content may access location";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Some ad content may access microphone";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Some ad content may access motion";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Some ad content may require access to the photo library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Some ad content may require access to the photo library.";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Some ad content may access reminders";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This only uses device info for more interesting and relevant ads.";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = gamekit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BGFMDB\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/EasyShowView\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseABTesting\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseRemoteConfig\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlatUIKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IvyiOSSdk\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MDFInternationalization\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MDFTextAccessibility\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PersonalizedAdConsent\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/../../IvyiOSSdk/Libraries\"",
+					"\"$(PODS_ROOT)/UMengAnalytics-NO-IDFA/**\"",
+				);
+				MARKETING_VERSION = 1.0.0;
+				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-l\"resolv.9\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"AVKit\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GameController\"",
+					"-framework",
+					"\"GameKit\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.ivy.sdkww;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "IvyiOSSdk/IvyiOSSdk-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "$(inherited)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6003F5C3195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-PrefiIvyiOSSdk.temp_caseinsensitive_rename.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IvyiOSSdk.temp_caseinsensitive_rename_EIvyiOSSdk.temp_caseinsensitive_renameample.app/IvyiOSSdk.temp_caseinsensitive_rename_EIvyiOSSdk.temp_caseinsensitive_renameample";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6003F5C4195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-PrefiIvyiOSSdk.temp_caseinsensitive_rename.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IvyiOSSdk.temp_caseinsensitive_rename_EIvyiOSSdk.temp_caseinsensitive_renameample.app/IvyiOSSdk.temp_caseinsensitive_rename_EIvyiOSSdk.temp_caseinsensitive_renameample";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "IvyiOSSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "IvyiOSSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "IvyiOSSdk_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C3195388D20070C39A /* Debug */,
+				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}

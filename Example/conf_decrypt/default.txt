@@ -1,0 +1,492 @@
+{
+  "v_api": 7,
+  "v_pub": 1,
+  "parfkaUrl": "http://gateway.restartad.com:8080/event",
+  "appid": 10000,
+  "domain": "http://api2.restartad.com/api/data?v_api=7&appid=10000&channel=appstore",
+  "iron_response": "http://iron.iibingo.com/api/ironsource/getifafromclient",
+  "stats": "http://stats.goinfun.com:8080",
+  "data": {
+    "foo": "bar",
+    "version": "19"
+  },
+  "register-push": false,
+  "remoteconfig": {
+    "foo": "bar"
+  },
+  "thirdlogin": {
+    "qq_app_id": "101904233",
+    "wechat_app_id": "wx57ec19774c46b09a",
+    "wechat_app_secret": "0232edda9454e108fd89fd22e116accc",
+    "weibo_app_key": "244346870",
+    "weibo_redirect_url": "http://www.ivymobile.cn/",
+    "taptap_client_id": "y1KQgi5bMZyxS4pdjG",
+    "id_card_check_url": "http://161.189.195.234:8081/auth/idCardCheck"
+  },
+  "remoteconfig-type": "douyin",
+  "gen_events": {
+    "interstitial_shown_2_in1day": [
+      {
+        "e1": "interstitial_shown",
+        "v": 2,
+        "op": ">=",
+        "d": 1,
+        "r": false
+      }
+    ],
+    "interstitial_shown_2_in3day": [
+      {
+        "e1": "interstitial_shown",
+        "v": 2,
+        "op": ">=",
+        "d": 3,
+        "r": false
+      }
+    ],
+    "video_shown_2_in1day": [
+      {
+        "e1": "video_shown",
+        "v": 2,
+        "op": ">=",
+        "d": 1,
+        "r": false
+      }
+    ],
+    "video_shown_2_in3day": [
+      {
+        "e1": "video_shown",
+        "v": 2,
+        "op": ">=",
+        "d": 3,
+        "r": false
+      }
+    ]
+  },
+  "track": {
+    "ci": [
+      1,
+      3,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "si": [
+      10,
+      20,
+      50,
+      100,
+      200,
+      500
+    ],
+    "cv": [
+      1,
+      3,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "sv": [
+      10,
+      20,
+      50,
+      100,
+      200,
+      500
+    ],
+    "aps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      10
+    ]
+  },
+  "init": {
+    "admob": {
+      "appid": "ca-app-pub-3940256099942544~1458002511"
+    },
+    "toutiao": {
+      "appid": "5018602",
+      "aid": "163364",
+      "name": "glow_puzzle",
+      "channel": "20113"
+    },
+    "douyin": {
+      "appid": "KMFzTCk4EJ1daUVjQswhG15abNQjM38ALrhxby08H8MjC1RYe+ceEEFHeLRaQy8pcdkwHk9hVt4tHVJoVswiGlpNdMBlZgIALpdZW39PeYBuRhIdLaVcFQVSPKRNQFFPLj+KdUACBg==",
+      "oversea": false,
+      "appname": "sdk demo",
+      "header": {
+        "gender": "female"
+      },
+      "applet": {
+        "appid": "tt3b904d2da4ba83f4",
+        "url": "sslocal://microapp?app_id=tt3b904d2da4ba83f4",
+        "title": "小程序标题",
+        "desc": "小程序描述"
+      }
+    },
+    "unity": {
+      "appid": "1434774"
+    },
+    "adcolony": {
+      "appid": "app6601a5de4748453793",
+      "zones": [
+        "vze1af6b2b2a38433b96"
+      ]
+    },
+    "vungle": {
+      "appid": "58fe200484fbd5b9670000e3"
+    },
+    "chartboost": {
+      "appid": "",
+      "appkey": ""
+    },
+    "appsflyer": {
+      "appid": "1274412560",
+      "key": "t3eJeKXAvDoLiS5ywyKeZL"
+    }
+  },
+  "ads": {
+    "gdpr": {
+      "pid": "pub-2949862404074770",
+      "privacy-url": "https://sites.google.com/view/cprivacysoulutions"
+    },
+    "backHomeAd": "custom",
+    "banner": {
+      "default": {
+        "ids": [
+          {
+            "platform": "toutiao",
+            "id": "918602194",
+            "priority": 0
+          },
+          {
+            "platform": "dfp",
+            "id": "/138143082/10027banner",
+            "priority": 0
+          },
+          {
+            "platform": "admob",
+            "id": "ca-mb-app-pub-8104698804312941/5283431725",
+            "priority": 1
+          },
+          {
+            "platform": "facebook",
+            "id": "307397099695994_307397309695973",
+            "priority": 2
+          },
+          {
+            "platform": "our",
+            "priority": 4
+          }
+        ],
+        "enable": true,
+        "cache": true,
+        "load-all": false
+      }
+    },
+    "full": {
+      "start": {
+        "ids": [
+          {
+            "platform": "douyin",
+            "id": "900546299",
+            "priority": 0
+          },
+          {
+            "platform": "toutiao",
+            "id": "918602128",
+            "priority": 1
+          },
+          {
+            "platform": "admob",
+            "id": "ca-mb-app-pub-8104698804312941/6760139605",
+            "priority": 2
+          },
+          {
+            "platform": "facebook",
+            "id": "307397099695994_307397433029294",
+            "priority": 3
+          },
+          {
+            "platform": "delicious",
+            "priority": 1
+          }
+        ],
+        "loop": 1,
+        "enable": true,
+        "cache": true,
+        "load-all": false
+      },
+      "pause": {
+        "ids": [
+          {
+            "platform": "dfp",
+            "id": "/138143082/10027inter",
+            "priority": 0
+          },
+          {
+            "platform": "admob",
+            "id": "ca-mb-app-pub-8104698804312941/6760139605",
+            "priority": 1
+          },
+          {
+            "platform": "facebook",
+            "id": "307397099695994_307397433029294",
+            "priority": 2
+          },
+          {
+            "platform": "our",
+            "priority": 4
+          }
+        ],
+        "loop": 1,
+        "enable": true,
+        "cache": true,
+        "load-all": true
+      },
+      "custom": {
+        "ids": [
+          {
+            "platform": "toutiao",
+            "id": "918602030",
+            "type": "video",
+            "priority": 0
+          },
+          {
+            "platform": "admob",
+            "id": "ca-mb-app-pub-8104698804312941/6760139605",
+            "priority": 2
+          },
+          {
+            "platform": "facebook",
+            "id": "307397099695994_307397433029294",
+            "priority": 1
+          },
+          {
+            "platform": "our",
+            "priority": 4
+          }
+        ],
+        "loop": 1,
+        "enable": true,
+        "cache": true,
+        "load-all": false
+      }
+    },
+    "video": {
+      "default": {
+        "ids": [
+          {
+            "platform": "douyin",
+            "id": "900546826",
+            "priority": 0
+          },
+          {
+            "platform": "toutiao",
+            "id": "918602396",
+            "priority": 1
+          },
+          {
+            "platform": "adcolony",
+            "id": "vze1af6b2b2a38433b96",
+            "priority": 2
+          },
+          {
+            "platform": "vungle",
+            "id": "PLMT03R77999",
+            "priority": 4
+          },
+          {
+            "platform": "dfp",
+            "id": "/138143082/10027video",
+            "priority": 1
+          },
+          {
+            "platform": "admob",
+            "id": "ca-mb-app-pub-8104698804312941/8236847485",
+            "priority": 3
+          },
+          {
+            "platform": "unity",
+            "id": "rewardedVideo",
+            "priority": 3
+          },
+          {
+            "platform": "applovin",
+            "id": "E8pVhU9mykQd3y0TD0Ksoq4vpf_Muat6ifcP9m96UakTWk5klQaWEeQ2IPOA-GHgxu54eEA8pvgKcn2MBdtQGH",
+            "priority": 2
+          }
+        ],
+        "loop": 0,
+        "enable": true,
+        "cache": true,
+        "load-all": false
+      }
+    },
+    "native": {
+      "loading": {
+        "ids": [
+          {
+            "platform": "douyin",
+            "id": "900546687",
+            "priority": 0
+          },
+          {
+            "platform": "dfp",
+            "id": "/6499/example/native",
+            "priority": 2,
+            "small-click-rate": 100,
+            "count": 3,
+            "advance": true
+          },
+          {
+            "platform": "admob",
+            "id": "ca-mb-app-pub-8104698804312941/2036835624",
+            "priority": 1,
+            "small-click-rate": 100,
+            "count": 3,
+            "advance": true
+          },
+          {
+            "platform": "facebook",
+            "id": "526907651034665_583917235333706",
+            "priority": 1,
+            "small-click-rate": 100,
+            "count": 3,
+            "advance": false
+          },
+          {
+            "platform": "our",
+            "count": 1,
+            "priority": 4,
+            "advance": false
+          }
+        ],
+        "loop": 1,
+        "max-count": 3,
+        "enable": true,
+        "cache": true,
+        "load-all": false,
+        "orientation": "landscape"
+      }
+    }
+  },
+  "sns": {
+    "api": "facebook",
+    "permissions": "public_profile, email",
+    "invite_url": "https://fb.me/339996279769409",
+    "invite_img": "",
+    "share_url": "https://www.facebook.com/FacebookDevelopers",
+    "share_msg": "this is a share test."
+  },
+  "invite": [
+    {
+      "api": "firebase",
+      "title": "测试邀请",
+      "msg": "测试邀请内容",
+      "deeplink": "",
+      "image": "https://gd4.alicdn.com/imgextra/i2/0/TB1hSKEGFXXXXbnXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg",
+      "action": "快来玩吧"
+    },
+    {
+      "api": "facebook",
+      "title": "测试邀请",
+      "msg": "测试邀请内容",
+      "deeplink": "",
+      "image": "https://gd4.alicdn.com/imgextra/i2/0/TB1hSKEGFXXXXbnXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg",
+      "action": "快来玩吧"
+    }
+  ],
+  "analyse": [
+    {
+      "api": "douyin"
+    },
+    {
+      "api": "toutiao"
+    },
+    {
+      "api": "umeng",
+      "key": "59893569f5ade40dd8001312"
+    },
+    {
+      "api": "firebase"
+    },
+    {
+      "api": "facebook",
+      "track-url": "http://referrer.happymatchgames.com"
+    },
+    {
+      "api": "game",
+      "key": "8e853bdfe4efbf2b909424d8c158e368",
+      "secret": "b5ab3b3f54b90ef599a32e821397eaebca024d1e"
+    },
+    {
+      "api": "google",
+      "key": "UA-108536991-1"
+    },
+    {
+      "api": "appsflyer",
+      "key": "t3eJeKXAvDoLiS5ywyKeZL",
+      "id": "1274412560"
+    }
+  ],
+  "push": [
+    {
+      "api": "firebase",
+      "manual": 0,
+      "topic": "language-demo,country-demo",
+      "push-server-url": "https://push.muttermobi.com:7778/fcmpush"
+    }
+  ],
+  "payment": {
+    "debug": 0,
+    "sharesecret": "2cf2f72b8b5b471ea7ae4f466f3d0cb2",
+    "verify-url": "http://odgp.restartad.com/Order/verifyAppleOrderLocal",
+    "data": {
+      "1": {
+        "id": "com.e688.sdkdemo.gold100",
+        "name": "100 coins"
+      },
+      "2": {
+        "id": "com.e688.sdkdemo.gold500",
+        "name": "500 coins"
+      }
+    }
+  },
+  "gamecenter": {
+    "leaderboard": {
+      "1": {
+        "id": "com.e688.sdkdemo.highscore",
+        "timescope": "week",
+        "sort": 1
+      },
+      "2": {
+        "id": "com.e688.sdkdemo.highlevel",
+        "timescope": "all",
+        "sort": 1
+      },
+      "3": {
+        "id": "com.e688.sdkdemo.score_level",
+        "sort": 1
+      }
+    },
+    "achievement": {
+      "1": {
+        "id": "com.e688.sdkdemo.firstblood"
+      },
+      "2": {
+        "id": "com.e688.sdkdemo.dailytask"
+      }
+    }
+  },
+  "share": "",
+  "appstoreid": 1243897744
+}

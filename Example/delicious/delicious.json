@@ -1,0 +1,59 @@
+{
+    "interstitial":{
+        "sw":720,
+        "sh":1280,
+        "bannerFrame":"40, 1000, 640, 200",
+        "downBtnPersentY": 0.5,
+        "banner": {
+            "bg": "bannerBg.png",
+            "paddingLeft": 30,
+            "paddingRight": 30,
+            "paddingUp": 20,
+            "iconSpace": 20,
+            "iconFrameWidth":170,
+            "iconFrameHeight":170,
+            "iconSelectAnimation":1,
+            "icon": {
+                "bg": "bannerIconFrame.png",
+                "selectBg": "bannerIconSelect.png",
+                "iconWidth": 147,
+                "iconHeight": 147,
+                "cornerRadius":20,
+                "offsetX": 8,
+                "offsetY": 2
+            }
+        }
+    },
+    "banner": {
+        "bg": "bannerBg.png",
+        "paddingLeft": 30,
+        "paddingRight": 30,
+        "paddingUp": 30,
+        "iconSpace": 20,
+        "iconFrameWidth":170,
+        "iconFrameHeight":170,
+        "iconSelectAnimation":1,
+        "icon": {
+            "bg": "bannerIconFrame.png",
+            "fg": "",
+            "iconWidth": 149,
+            "iconHeight": 150,
+            "cornerRadius":25,
+            "offsetX": 6,
+            "offsetY": 6
+        }
+    },
+    "icon": {
+        "bg": "bannerIconFrame.png",
+        "adSign": "ad.png",
+        "autoRotato": 1,
+        "iconAnimate": 1,
+        "iconWidth": 149,
+        "iconHeight": 150,
+        "iconAnimation": 1,
+        "cornerRadius":25,
+        "offsetX": 6,
+        "offsetY": 6,
+        "jumpToVideo": 0
+    }
+}

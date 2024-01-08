@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SDKInterstitialViewController">
+            <connections>
+                <outlet property="closeBtn" destination="0bJ-NN-a7u" id="odd-v3-7vU"/>
+                <outlet property="imageView" destination="bvy-Ly-hpd" id="vO3-TP-LvB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hKq-DN-1GA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sdk_dialog_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="iLu-Dq-5vY" userLabel="frame">
+                    <rect key="frame" x="29.333333333333343" y="85" width="355.33333333333337" height="566"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="iLu-Dq-5vY" secondAttribute="height" multiplier="54:86" id="JtJ-jF-dPr"/>
+                    </constraints>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <include reference="JtJ-jF-dPr"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bvy-Ly-hpd" userLabel="image">
+                    <rect key="frame" x="44" y="98.333333333333314" width="326" height="539.33333333333326"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sdk_btn_close.png" translatesAutoresizingMaskIntoConstraints="NO" id="0bJ-NN-a7u" userLabel="close">
+                    <rect key="frame" x="340.33333333333331" y="85" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="jyr-a1-yNm"/>
+                        <constraint firstAttribute="width" constant="44" id="vJr-3G-BVl"/>
+                    </constraints>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <include reference="jyr-a1-yNm"/>
+                            <include reference="vJr-3G-BVl"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0bJ-NN-a7u" firstAttribute="trailing" secondItem="iLu-Dq-5vY" secondAttribute="trailing" id="1qB-1U-cTo"/>
+                <constraint firstItem="bvy-Ly-hpd" firstAttribute="width" secondItem="iLu-Dq-5vY" secondAttribute="width" multiplier="1:1.09" id="BZo-Ha-WxV"/>
+                <constraint firstItem="iLu-Dq-5vY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Mzq-xI-4TF"/>
+                <constraint firstItem="bvy-Ly-hpd" firstAttribute="height" secondItem="iLu-Dq-5vY" secondAttribute="height" multiplier="1:1.05" id="P32-21-HPW"/>
+                <constraint firstItem="0bJ-NN-a7u" firstAttribute="top" secondItem="iLu-Dq-5vY" secondAttribute="top" id="VEB-bc-0AP"/>
+                <constraint firstItem="bvy-Ly-hpd" firstAttribute="centerX" secondItem="iLu-Dq-5vY" secondAttribute="centerX" id="dBm-WF-1oW"/>
+                <constraint firstItem="iLu-Dq-5vY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="f2R-A4-Rdt"/>
+                <constraint firstItem="iLu-Dq-5vY" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:1.3" id="lxZ-Hs-WLr"/>
+                <constraint firstItem="bvy-Ly-hpd" firstAttribute="centerY" secondItem="iLu-Dq-5vY" secondAttribute="centerY" id="usZ-qE-fvI"/>
+            </constraints>
+            <variation key="heightClass=regular">
+                <mask key="subviews">
+                    <include reference="iLu-Dq-5vY"/>
+                    <include reference="bvy-Ly-hpd"/>
+                    <include reference="0bJ-NN-a7u"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Mzq-xI-4TF"/>
+                    <include reference="f2R-A4-Rdt"/>
+                    <include reference="lxZ-Hs-WLr"/>
+                    <include reference="BZo-Ha-WxV"/>
+                    <include reference="P32-21-HPW"/>
+                    <include reference="dBm-WF-1oW"/>
+                    <include reference="usZ-qE-fvI"/>
+                    <include reference="1qB-1U-cTo"/>
+                    <include reference="VEB-bc-0AP"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="33.5" y="140.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sdk_btn_close.png" width="44" height="44"/>
+        <image name="sdk_dialog_frame.png" width="540" height="860"/>
+    </resources>
+</document>

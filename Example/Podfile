@@ -1,0 +1,148 @@
+#source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://cdn.cocoapods.org/'
+#source 'https://github.com/bytedance/cocoapods_sdk_source_repo.git'
+#source 'https://github.com/volcengine/volcengine-specs.git'
+platform :ios, '12.0'
+optional_frameworks = ['AdServices']
+required_frameworks = []
+use_frameworks!
+use_modular_headers!
+mytarget = 'IvyiOSSdk'
+target mytarget do
+
+  pod 'IvyiOSSdk/Core', :path => '../'
+  pod 'IvyiOSSdk/Firebase', :path => '../'
+  pod 'IvyiOSSdk/Firebase+', :path => '../'
+ # pod 'IvyiOSSdk/FacebookSNS', :path => '../'
+ # pod 'IvyiOSSdk/Applovin', :path => '../'
+  pod 'IvyiOSSdk/Google', :path => '../'
+  #pod 'IvyiOSSdk/Max', :path => '../'
+ # pod 'IvyiOSSdk/Pangle', :path => '../'
+ # pod 'IvyiOSSdk/Yandex', :path => '../'
+  pod 'IvyiOSSdk/Appsflyer', :path => '../'
+ # pod 'IvyiOSSdk/ThirdLogin', :path => '../'
+ # pod 'IvyiOSSdk/GDT', :path => '../'
+  pod 'IvyiOSSdk/AIHelp', :path => '../'
+end
+post_install do |installer|
+    # Get main project development team id
+    dev_team = ""
+    project = installer.aggregate_targets[0].user_project
+    project.targets.each do |target|
+        target.build_configurations.each do |config|
+            if dev_team.empty? and !config.build_settings['DEVELOPMENT_TEAM'].nil?
+                dev_team = config.build_settings['DEVELOPMENT_TEAM']
+            end
+        end
+    end
+    
+    # Fix bundle targets' 'Signing Certificate' to 'Sign to Run Locally'
+    installer.pods_project.targets.each do |target|
+        if target.respond_to?(:product_type) and target.product_type == "com.apple.product-type.bundle"
+            target.build_configurations.each do |config|
+                config.build_settings['DEVELOPMENT_TEAM'] = dev_team
+            end
+        end
+    end
+end
+#
+#def containsStr(arr, str)
+#  arr.each do |target|
+#    if target.to_s == str
+#      return target
+#    end
+#  end
+#  return false
+#end
+#
+#def exsit_framework?(build_phase,name)
+#  # next !if build_phase.nil?
+#  build_phase.files_references.each do |ref|
+#    if ref.name == "#{name}"
+#      puts "已经存在 #{name}"
+#      return true
+#    end
+#  end
+#  puts "不存在 #{name}"
+#  return false
+#end
+#
+#def updateSystemFramework(project, target, name, command, optional = false)
+#  require 'xcodeproj'
+#  puts "#{command} #{name} to #{target}"
+#  build_phase = target.frameworks_build_phase
+#  framework_group = project.frameworks_group
+#  if command == :add
+#    if self.exsit_framework?(build_phase,name)
+#      return
+#    end
+#    systempath = "System/Library/Frameworks/"
+#    path = "#{systempath}#{name}"
+#    file_ref = framework_group.new_reference(path)
+#    file_ref.name = "#{name}"
+#    file_ref.source_tree = 'SDKROOT'
+#    build_file = build_phase.add_file_reference(file_ref)
+#    if optional
+#      build_file.settings = { 'ATTRIBUTES' => ['Weak'] }
+#    end
+#    else
+#    build_phase.files_references.each do |ref|
+#      if ref.name == "#{name}"
+#        puts "删除 #{name}"
+#        build_phase.remove_file_reference(ref)
+#        framework_group.children.delete(ref)
+#        break
+#      end
+#    end
+#  end
+#end
+#
+#def modBuildSettingsConfig(target, configName, configValue)
+#  target.build_configurations.each do |config|
+#      #获得build settings
+#      build_settings = config.build_settings
+#      puts "修改 -- [#{config.name}] BuildSettings [#{configName}] == #{configValue}"
+#      build_settings[configName] = configValue
+#      #build_settings是一个哈希，里面是一个个配置
+#      build_settings.each do |key,value|
+#        print " -- [", config.name, "] BuildSettings [", key, "] == ", value, "\n"
+#      end
+#  end
+#end
+#post_install do |installer|
+#    installer.aggregate_targets.each do |target|
+#      puts '======================'
+#      user_project = target.user_project
+#      user_project.targets.each do |user_target|
+#        if user_target.to_s == mytarget
+#
+#          modBuildSettingsConfig(user_target, "LD_RUNPATH_SEARCH_PATHS", "$(inherited) @executable_path/Frameworks")
+#
+#          puts '添加 AdServices.framework'
+#          optional_frameworks.each do |framework|
+#            updateSystemFramework(user_project, user_target, "#{framework}.framework", :add, true)
+#          end
+#
+#          required_frameworks.each do |framework|
+#            updateSystemFramework(user_project, user_target, "#{framework}.framework", :add, false)
+#          end
+#
+##          phase = containsStr user_target.shell_script_build_phases, "Crashlytics"
+##          if phase
+##            puts "删除 Firebase #{phase} 脚本"
+##            user_target.build_phases.delete(phase)
+##          end
+##          puts '添加 Firebase Crashlytics 脚本'
+##          phase = user_target.new_shell_script_build_phase("Crashlytics")
+##          phase.shell_script = "\"${PODS_ROOT}/FirebaseCrashlytics/run\" -gsp \"${PROJECT_DIR}/GoogleService-Info.plist\""
+##
+#          user_target.build_configurations.each do |config|
+#          end
+#        end
+#      end
+#      puts '======================'
+#    end
+#
+#    installer.pods_project.targets.each do |target|
+#    end
+#end

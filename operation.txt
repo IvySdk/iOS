@@ -1,0 +1,83 @@
+git clone git@10.80.1.8:iossdk/IvyiOSSdk.git
+cd IvyiOSSdk
+git br
+curl google.com
+hp
+git ps origin :8.1.3
+git pl
+ll
+cp -f IvyiOSSdk.podspec IvyiOSSdk.podspec.bak
+cp -f IvyiOSSdk.podspec.update IvyiOSSdk.podspec
+curl google.com
+hp
+curl google.com
+./syncpods.sh
+./syncpods.sh
+nhp
+./syncpods.sh
+curl gitlab.com
+hp
+curl gitlab.com
+pod repo update
+curl google.com
+hp
+curl google.com
+./syncpods.sh
+ll
+cp IvyiOSSdk.podspec.bak IvyiOSSdk.podspec
+cat Example/Podfile.lock| grep -i AppsFlyerFramework
+cat Example/Podfile.lock| grep -i Google-Mobile-Ads-SDK
+cat Example/Podfile.lock| grep -i GoogleMobileAdsMediationFyber
+cat Example/Podfile.lock| grep -i GoogleMobileAdsMediationIronSource
+cat Example/Podfile.lock| grep -i GoogleMobileAdsMediationInmobi
+cat Example/Podfile.lock| grep -i GoogleMobileAdsMediationvungle
+cat Example/Podfile.lock| grep -i GoogleMobileAdsMediationfacebook
+cat Example/Podfile.lock| grep -i GoogleMobileAdsMediationunity
+cat Example/Podfile.lock| grep -i GoogleMobileAdsMediationcha
+cat Example/Podfile.lock| grep -i GoogleMobileAdsMediationap
+cat Example/Podfile.lock| grep -i GoogleMobileAdsMediationpan
+cat Example/Podfile.lock| grep -i GoogleMobileAdsMediationad
+cat Example/Podfile.lock| grep -i fb
+cat Example/Podfile.lock| grep -i AppLovinMediationAdColonyAdapter
+cat Example/Podfile.lock| grep -i AppLovinMediationAmazonAdMarketplaceAdapter
+cat Example/Podfile.lock| grep -i AmazonPublisherServicesSDK
+cat Example/Podfile.lock| grep -i AppLovinMediationChartboostAdapter
+cat Example/Podfile.lock| grep -i AppLovinMediationFyberAdapter
+cat Example/Podfile.lock| grep -i AppLovinMediationGoogleAdManagerAdapter
+cat Example/Podfile.lock| grep -i AppLovinMediationGoogleAdapter
+cat Example/Podfile.lock| grep -i AppLovinMediationIronSourceAdapter
+cat Example/Podfile.lock| grep -i AppLovinMediationFacebookAdapter
+cat Example/Podfile.lock| grep -i AppLovinMediationMintegralAdapter
+cat Example/Podfile.lock| grep -i AppLovinMediationMyTargetAdapter
+cat Example/Podfile.lock| grep -i AppLovinMediationSmaatoAdapter
+cat Example/Podfile.lock| grep -i AppLovinMediationUnityAdsAdapter
+git ss
+git aa
+git ci -m "Admobç§»é<83>¹¤Mintegral adapter, Firebase 10.4.0 ->  10.5.0"
+git tag 8.1.3
+git tag -d 8.1.3
+git ss
+git lg -1
+git tag 8.1.3
+git ps
+git ps --tag
+ll
+cd Example
+ll
+rm -fr Pods
+rm -fr Podfile.lock
+..
+ll
+./syncpods.sh fast
+git br
+ll
+cd ios-build-copy-sources
+ll
+..
+ll
+git submodule update -f --init
+cd ios-build-copy-sources
+git br
+git co -f master
+git pl
+
