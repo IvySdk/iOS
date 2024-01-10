@@ -2,46 +2,6 @@
 
 # 前言
 **default.json: sdk配置文件, 广告、计费、打点等功能均需要通过此文件配置；对各部分配置详细说明见文档最底部**
-# Info.plist 配置
-   以下仅用作参考，根据实际环境为准
-   * admob
-```js
-<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-4701483365698544~9261873855</string>
-```
-* facebook
-
-```js
-<key>FacebookAppID</key>
-	<string>2031393607025870</string>
-	<key>FacebookClientToken</key>
-	<string>550ff04a5b6eb476d8de790d2e0cd179</string>
-	<key>FacebookDisplayName</key>
-	<string>Shoot Bubble</string>
-	<key>FirebaseAppDelegateProxyEnabled</key>
-	<true/>
-```
-
-* aps
-```js
-    <key>APS_APPID</key>
-    <string>48f45f22-9f81-4972-9412-437a429e7572</string>
-```
-* applovin
-
-```js
-  <key>AppLovinConsentFlowInfo</key>
-    <dict>
-        <key>AppLovinConsentFlowEnabled</key>
-        <true/>
-        <key>AppLovinConsentFlowPrivacyPolicy</key>
-        <string>http://www.ivymobileinternational.com/index.php/privacy-policy/</string>
-        <key>AppLovinConsentFlowTermsOfService</key>
-        <string>https://sites.google.com/view/ivymobile-terms-of-use/</string>
-    </dict>
-    <key>AppLovinSdkKey</key>
-    <string>E8pVhU9mykQd3y0TD0Ksoq4vpf_Muat6ifcP9m96UakTWk5klQaWEeQ2IPOA-GHgxu54eEA8pvgKcn2MBdtQGH</string>
-```
 
 
 ## 1, 添加引用
@@ -687,4 +647,44 @@ track
 参考示例
 `payment`
 
+# Info.plist 配置
+   以下仅用作参考，根据实际环境为准
+   * admob
+```js
+<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-4701483365698544~9261873855</string>
+```
+* facebook
+
+```js
+<key>FacebookAppID</key>
+	<string>2031393607025870</string>
+	<key>FacebookClientToken</key>
+	<string>550ff04a5b6eb476d8de790d2e0cd179</string>
+	<key>FacebookDisplayName</key>
+	<string>Shoot Bubble</string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<true/>
+```
+
+* aps
+```js
+    <key>APS_APPID</key>
+    <string>48f45f22-9f81-4972-9412-437a429e7572</string>
+```
+* applovin
+
+```js
+  <key>AppLovinConsentFlowInfo</key>
+    <dict>
+        <key>AppLovinConsentFlowEnabled</key>
+        <true/>
+        <key>AppLovinConsentFlowPrivacyPolicy</key>
+        <string>http://www.ivymobileinternational.com/index.php/privacy-policy/</string>
+        <key>AppLovinConsentFlowTermsOfService</key>
+        <string>https://sites.google.com/view/ivymobile-terms-of-use/</string>
+    </dict>
+    <key>AppLovinSdkKey</key>
+    <string>E8pVhU9mykQd3y0TD0Ksoq4vpf_Muat6ifcP9m96UakTWk5klQaWEeQ2IPOA-GHgxu54eEA8pvgKcn2MBdtQGH</string>
+```
 
