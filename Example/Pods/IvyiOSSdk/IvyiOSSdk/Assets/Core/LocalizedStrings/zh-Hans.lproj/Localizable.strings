@@ -1,0 +1,19 @@
+/* 
+  SdkCore.strings
+  Pods
+
+  Created by 余冰星 on 2017/8/4.
+
+*/
+GC_UNAVAILABLE = "GameCenter 不可用";
+GC_UNAVAILABLE_MSG = "GameKit 在您的机器上面不支持，您的设备需要 iOS 4.1 或者更高。";
+INTERNET_UNAVAILABLE = "网络不可用";
+INTERNET_UNAVAILABLE_MSG = "连接不上网络，请重新连接网络，您的分数或成就数据将在本地保存，稍后将上传。";
+UNAUTHENTICATED = "您的GameCenter 账号没有登录";
+UNAUTHENTICATED_MSG = "您的GameCenter 账号没有登录，请先登录您的GameCenter 账号。";
+
+SDK_NOTICE_UPDATE_TITLE = "新功能更新";
+SDK_NOTICE_UPDATE_DESC = "游戏加入全新功能，更新版本抢先体验！";
+SDK_NOTICE_UPDATE_CONFIRM = "立即更新";
+SDK_NOTICE_UPDATE_CANCEL = "取消";
+SDK_NOTICE_UPDATE_OK = "确定";

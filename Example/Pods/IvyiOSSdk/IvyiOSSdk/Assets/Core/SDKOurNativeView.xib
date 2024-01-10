@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SDKOurNativeView">
+            <connections>
+                <outlet property="adBodyLabel" destination="ZHQ-6u-IhC" id="r13-In-1e9"/>
+                <outlet property="adCallToActionButton" destination="d94-3I-s38" id="KNW-Dq-dhW"/>
+                <outlet property="adCornerView" destination="ULU-K4-Y2y" id="UzZ-GE-QdY"/>
+                <outlet property="adCoverMediaView" destination="gvG-bl-zce" id="CdJ-BZ-qf5"/>
+                <outlet property="adIconImageView" destination="lyx-rF-r5n" id="cNb-wm-B3j"/>
+                <outlet property="adTitleLabel" destination="fdG-X4-lG9" id="7XM-hF-4EI"/>
+                <outlet property="bgImageView" destination="qwa-4C-e7c" id="vzb-eU-DnC"/>
+                <outlet property="closeButton" destination="QQC-sb-eVf" id="oyn-30-BYU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="x3V-Lp-Vb6">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwa-4C-e7c" userLabel="bgImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lyx-rF-r5n" userLabel="adIconImageView">
+                    <rect key="frame" x="10" y="10" width="70" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES"/>
+                    </accessibility>
+                </imageView>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title Title Title Title Title " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdG-X4-lG9" userLabel="adTitleLabel">
+                    <rect key="frame" x="94" y="30" width="294" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHQ-6u-IhC" userLabel="adBodyLabel">
+                    <rect key="frame" x="15" y="85" width="384" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.90378852739726023" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gvG-bl-zce" userLabel="adCoverMediaView" customClass="UIImageView">
+                    <rect key="frame" x="0.0" y="132" width="414" height="548"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULU-K4-Y2y" userLabel="adCornerView">
+                    <rect key="frame" x="202" y="363" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES"/>
+                    </accessibility>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d94-3I-s38" userLabel="adCallToActionButton">
+                    <rect key="frame" x="297" y="691" width="107" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.35686274509999999" green="0.57647058819999997" blue="0.98823529409999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="Install"/>
+                    <state key="normal" title="Install Now">
+                        <color key="titleColor" red="0.58467477560000003" green="0.93861526250000005" blue="0.64483553169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQC-sb-eVf" userLabel="closeButton">
+                    <rect key="frame" x="358" y="10" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+        </view>
+    </objects>
+</document>

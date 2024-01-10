@@ -560,7 +560,7 @@ static NSString * CRASH_EMAIL_ADDR;
         _enableATT = !disable_att;
         id tmp = [[SDKCache cache] objectForKey:@"BUILD_VERSION"];
         NSString *lastBuildVersion = tmp ? (NSString *)tmp : @"";
-        _isChangeVersion = ![buildVersion isEqualToString:lastBuildVersion];
+        _isChangeVersion = YES;//![buildVersion isEqualToString:lastBuildVersion];
         if(!self.config || _isChangeVersion) {
             [[SDKCache cache] setObject:buildVersion forKey:@"BUILD_VERSION"];
             NSDictionary *sdk_cg = [SDKJSONHelper getJsonDataFrom:@"sdk_cg" bundle:nil extension:@"json" AESKey:nil];
@@ -575,7 +575,8 @@ static NSString * CRASH_EMAIL_ADDR;
                 data = [SDKJSONHelper getJsonDataFrom:fileName bundle:nil extension:@"json" AESKey:SDK_CONFIG_KEY];
             }
             if(!data){
-                data = [SDKJSONHelper getJsonDataFrom:@"default" bundle:nil extension:@"json" AESKey:SDK_CONFIG_KEY];
+//                data = [SDKJSONHelper getJsonDataFrom:@"default" bundle:nil extension:@"json" AESKey:SDK_CONFIG_KEY];
+                data = [SDKJSONHelper getJsonDataFrom:@"default" bundle:nil];
             }
             if(data) {
                 _config = data;
