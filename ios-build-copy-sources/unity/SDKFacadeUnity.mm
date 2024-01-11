@@ -143,6 +143,12 @@ extern "C" {
     Send("RiseSdkListener", "adDidClick", _msg);
 }
 
+- (void)adPaid:(NSString *)dict
+{
+    const char * _msg = dict ? [dict UTF8String] : "";
+    Send("RiseSdkListener", "onGMSPaaid", _msg);
+}
+
 - (void)deliciousIconClick:(NSString *)bannerDownPath jumpURL:(NSString *)url
 {
     const char * _msg = [[NSString stringWithFormat:@"%@|%@", bannerDownPath, url] UTF8String];
@@ -359,60 +365,43 @@ extern "C" {
     Send("RiseSdkListener", "onInAppMessageDisplayed", _msg);
 }
 
-- (void)onRequireWeChatLogin:(nullable NSString *)data
+- (void)onAppsflyerInitFail:(NSString *)data
 {
     data = data ? data : @"{}";
     const char * _msg = [data UTF8String];
-    Send("RiseSdkListener", "RequireWXLogin", _msg);
+    Send("RiseSdkListener", "onAFInitFailed", _msg);
 }
 
-- (void)onCloudFuncSuccess:(nonnull NSString *)data
+- (void)onAppsflyerInitSuccess
 {
-    data = data ? data : @"{}";
-    const char * _msg = [data UTF8String];
-    Send("RiseSdkListener", "cloudFuncSuccess", _msg);
+    const char * _msg = [@"{}" UTF8String];
+    Send("RiseSdkListener", "onAFInitSuccess", _msg);
 }
 
-- (void)onCloudFuncFail:(nonnull NSString *)data
+- (void)onAppsflyerAppOpenAttribution:(NSString *)data
 {
     data = data ? data : @"{}";
     const char * _msg = [data UTF8String];
-    Send("RiseSdkListener", "cloudFuncFail", _msg);
+    Send("RiseSdkListener", "onAFAppOpenAttribution", _msg);
 }
 
-- (void)onWeChatLogSuccess:(NSString *)data
+- (void)onAppsflyerAppOpenttributionFailure:(NSString *)data
 {
     data = data ? data : @"{}";
     const char * _msg = [data UTF8String];
-    Send("RiseSdkListener", "onWXLogSuccess", _msg);
+    Send("RiseSdkListener", "onAFAttributionFailure", _msg);
 }
 
-- (void)onWeChatLogFailed:(NSString *)data
+- (void)onAppsflyerConversionDataFail:(NSString *)data
 {
-    data = data ? data : @"{}";
     const char * _msg = [data UTF8String];
-    Send("RiseSdkListener", "onWXLogFailed", _msg);
+    Send("RiseSdkListener", "onAFConversionDataFail", _msg);
 }
 
-- (void)onWeChatNotInstall:(NSString *)data
+- (void)onAppsflyerConversionDataSuccesss:(NSString *)data
 {
-    data = data ? data : @"{}";
     const char * _msg = [data UTF8String];
-    Send("RiseSdkListener", "onWXUninstall", _msg);
-}
-
-- (void)onWeChatPreLogState:(NSString *)data
-{
-    data = data ? data : @"{}";
-    const char * _msg = [data UTF8String];
-    Send("RiseSdkListener", "onWXPreLogState", _msg);
-}
-
-- (void)onUserProtocol:(NSString *)data
-{
-    data = data ? data : @"{}";
-    const char * _msg = [data UTF8String];
-    Send("RiseSdkListener", "onUserProtocol", _msg);
+    Send("RiseSdkListener", "onAFConversionDataSuccesss", _msg);
 }
 
 @end
@@ -1196,6 +1185,30 @@ extern "C" {
                 }
             } else {
                 [[SDKFacade sharedInstance] logIvyEvent:objc_name];
+            }
+        }
+    }
+
+    void logFirebaseEventWithData(const char *name, const char *data)
+    {
+        if(name != NULL) {
+            NSString *objc_name = [NSString stringWithUTF8String:name];
+            if(data != NULL) {
+                NSMutableDictionary *objc_data = [[NSMutableDictionary alloc] init];
+                NSString *_data = [NSString stringWithUTF8String:data];
+                NSArray *arr = [_data componentsSeparatedByString:@","];
+                if(arr && arr.count > 1) {
+                    for (int i=0; i<arr.count-1; i+=2) {
+                        NSString *key = [arr objectAtIndex:i];
+                        NSString *value = [arr objectAtIndex:i+1];
+                        [objc_data setObject:value forKey:key];
+                    }
+                    [[SDKFacade sharedInstance] logFirebaseEvent:objc_name withData:objc_data];
+                } else {
+                    [[SDKFacade sharedInstance] logFirebaseEvent:objc_name];
+                }
+            } else {
+                [[SDKFacade sharedInstance] logFirebaseEvent:objc_name];
             }
         }
     }
@@ -2039,42 +2052,10 @@ extern "C" {
     }
 
     void showUserProtocolDialog(){
-        [[SDKFacade sharedInstance] showUserProtocolDialog];
+        [[SDKFacade sharedInstance] showGameProtocolDialog];
     }
 
-    void cloudFunc(const char* _Nonnull funckey, const char *data){
-        NSString *oc_name = [NSString stringWithUTF8String:funckey];
-                if(data != NULL) {
-                    NSMutableDictionary *objc_data = [[NSMutableDictionary alloc] init];
-                    NSString *_data = [NSString stringWithUTF8String:data];
-                    NSArray *arr = [_data componentsSeparatedByString:@","];
-                    if(arr && arr.count > 1) {
-                        for (int i=0; i<arr.count-1; i+=2) {
-                            NSString *key = [arr objectAtIndex:i];
-                            NSString *value = [arr objectAtIndex:i+1];
-                            [objc_data setObject:value forKey:key];
-                        }
-                        [[SDKFacade sharedInstance] cloudFunc:oc_name params:objc_data];
-                    }
-                }
-    }
-
-    void cloudFuncWithoutLogin(const char* _Nonnull funckey, const char *data){
-        NSString *oc_name = [NSString stringWithUTF8String:funckey];
-                if(data != NULL) {
-                    NSMutableDictionary *objc_data = [[NSMutableDictionary alloc] init];
-                    NSString *_data = [NSString stringWithUTF8String:data];
-                    NSArray *arr = [_data componentsSeparatedByString:@","];
-                    if(arr && arr.count > 1) {
-                        for (int i=0; i<arr.count-1; i+=2) {
-                            NSString *key = [arr objectAtIndex:i];
-                            NSString *value = [arr objectAtIndex:i+1];
-                            [objc_data setObject:value forKey:key];
-                        }
-                        [[SDKFacade sharedInstance] cloudFuncWithoutLogin:oc_name params:objc_data];
-                    }
-                }
-    }
+ 
 
 #ifdef __cplusplus
 } // extern "C"

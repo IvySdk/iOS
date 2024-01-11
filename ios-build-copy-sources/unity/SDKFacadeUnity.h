@@ -16,5 +16,7 @@
 #import <IvyiOSSdk/SDKFirestoreDelegate.h>
 #import <IvyiOSSdk/SDKFirebaseDatabaseDelegate.h>
 #import <IvyiOSSdk/SDKInAppMessageDelegate.h>
-@interface SDKFacadeUnity : NSObject<SDKDelegate, SDKAdDelegate, SDKPaymentDelegate, SDKSNSDelegate, SDKWebviewDelegate, SDKCloudFunctionDelegate, SDKFirestoreDelegate, SDKFirebaseDatabaseDelegate, SDKInAppMessageDelegate>
+#import <IvyiOSSdk/SDKAppsflyerDelegate.h>
+
+@interface SDKFacadeUnity : NSObject<SDKDelegate, SDKAdDelegate, SDKPaymentDelegate, SDKSNSDelegate, SDKWebviewDelegate, SDKCloudFunctionDelegate, SDKFirestoreDelegate, SDKFirebaseDatabaseDelegate, SDKInAppMessageDelegate, SDKAppsflyerDelegate>
 @end

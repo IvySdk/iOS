@@ -37,6 +37,9 @@
 - (void)adNeedReload:(NSString *)tag adType:(int)adType;
 
 - (void)deliciousIconClick:(NSString *)bannerDownPath jumpURL:(NSString *)url;
+
+- (void)adPaid:(NSString *)dict;
+
 @end
 
 #endif /* SDKAdDelegate_h */

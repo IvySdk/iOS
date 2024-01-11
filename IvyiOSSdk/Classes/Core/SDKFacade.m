@@ -254,6 +254,7 @@ NSString * const SHOW_BANNER_TIMER = @"SHOW_BANNER_TIMER";
 @synthesize firebaseDatabaseDelegate = _firebaseDatabaseDelegate;
 @synthesize vcCount = _vcCount;
 @synthesize inAppMessageDelegate = _inAppMessageDelegate;
+@synthesize appsflyerDelegate = _appsflyerDelegate;
 static NSString * CRASH_EMAIL_ADDR;
 #pragma mark -
 #pragma mark Properties Method
@@ -5115,6 +5116,22 @@ static NSString * CRASH_EMAIL_ADDR;
     [self logIvyEvent:eventId withData:data];
 }
 
+- (void)logFirebaseEvent:(NSString *)eventId
+{
+    SDKAnalyse *_analyse = [self getAnalyse:SDK_ANALYSE_FIREBASE];
+    if(_analyse) {
+        [_analyse logEvent:eventId];
+    }
+}
+
+- (void)logFirebaseEvent:(NSString *)eventId withData:(NSDictionary<NSString *,id> *)data
+{
+    SDKAnalyse *_analyse = [self getAnalyse:SDK_ANALYSE_FIREBASE];
+    if(_analyse) {
+        [_analyse logEvent:eventId withData:data];
+    }
+}
+
 -(void)trackScreen:(nonnull NSString*)screenClass screenName:(nonnull NSString*)screenName
 {
     NSArray *_analyses = [self analyseQueue:screenName];
@@ -5330,7 +5347,7 @@ static NSString * CRASH_EMAIL_ADDR;
     [self setUserPropertyString:idfa forName:@"idfa"];
     [self setUserPropertyString:idfv forName:@"idfv"];
 }
--(void)logAdRevenue:(nonnull NSString *)adClassName mediationType:(SDK_MEDIATION_TYPE)mType adType:(nonnull NSString *)adType adUnit:(nonnull NSString *)adUnit placement:(nonnull NSString *)placement country:(nonnull NSString *)country currency:(nonnull NSString *)currency value:(NSNumber * _Nonnull)value
+-(void)logAdRevenue:(nonnull NSString *)adClassName mediationType:(SDK_MEDIATION_TYPE)mType adType:(nonnull NSString *)adType adUnit:(nonnull NSString *)adUnit placement:(nonnull NSString *)placement country:(nonnull NSString *)country currency:(nonnull NSString *)currency value:(NSNumber * _Nonnull)value precision:(int)precision
 {
     [self logEvent:@"gms_ad_paid_event" withData: @{
         @"ad_network": adClassName,
@@ -5340,6 +5357,31 @@ static NSString * CRASH_EMAIL_ADDR;
         @"currency": currency,
         @"value": value
     }];
+    
+    @try{
+        NSDictionary * dict = [NSDictionary dictionary];
+        [dict setValue:adClassName forKey:@"ad_network"];
+        [dict setValue:adType forKey:@"ad_format"];
+        [dict setValue:placement forKey:@"placement"];
+        [dict setValue:adUnit forKey:@"adunit"];
+        [dict setValue:currency forKey:@"currency"];
+        [dict setValue:value forKey:@"value"];
+        [dict setValue:[NSString stringWithFormat:@"%d", precision] forKey:@"precision"];
+        NSError *error;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:0 error:&error];
+        if (jsonData != nil && error == nil) {
+            NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+            if (_adDelegate) {
+                [_adDelegate adPaid:jsonString];
+            }
+        } else if (error != nil) {
+            NSLog(@"Error converting to JSON string: %@", error.localizedDescription);
+        }
+    } @catch (NSException * e){
+        
+    }
+    
+    
 //#ifdef APPSFLYER
 //    if (_af_adrevenue) {
 //        AppsFlyerAdRevenueMediationNetworkType amType = AppsFlyerAdRevenueMediationNetworkTypeGoogleAdMob;
@@ -6574,6 +6616,70 @@ void UncaughtExceptionHandler(NSException *exception) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:mailPath] options:@{} completionHandler:nil];
     }
 }
+
+- (void)onAppsflyerInitSuccess
+{
+    if (_appsflyerDelegate) {
+        [_appsflyerDelegate onAppsflyerInitSuccess];
+    }
+}
+
+- (void)onAppsflyerInitFail:(NSString *)data
+{
+    if (_appsflyerDelegate) {
+        [_appsflyerDelegate onAppsflyerInitFail:data];
+    }
+}
+
+- (void)onAppsflyerAppOpenAttribution:(NSDictionary *)attributionData
+{
+    @try{
+        NSError *error;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:attributionData options:0 error:&error];
+        if (jsonData != nil && error == nil) {
+            NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+            if (_appsflyerDelegate) {
+                [_appsflyerDelegate onAppsflyerAppOpenAttribution:jsonString];
+            }
+        } else if (error != nil) {
+        }
+    } @catch (NSException * e){
+        
+    }
+}
+
+- (void)onAppsflyerAppOpenAttributionFailure:(NSError *)error
+{
+    if (error != nil && _appsflyerDelegate) {
+        [_appsflyerDelegate onAppsflyerAppOpenAttributionFailure:error.description];
+    }
+}
+
+- (void)onAppsflyerConversionDataFail:(NSError *)error
+{
+    if (error != nil && _appsflyerDelegate) {
+        [_appsflyerDelegate onAppsflyerConversionDataFail:error.description];
+    }
+}
+
+- (void)onAppsflyerConversionDataSuccesss:(NSDictionary *)installData
+{
+    @try{
+        NSError *error;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:installData options:0 error:&error];
+        if (jsonData != nil && error == nil) {
+            NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+            if (_appsflyerDelegate) {
+                [_appsflyerDelegate onAppsflyerConversionDataSuccesss:jsonString];
+            }
+        } else if (error != nil) {
+        }
+    } @catch (NSException * e){
+        
+    }
+}
+
+
 
 
 @end

@@ -1100,12 +1100,12 @@ PODS:
   - VungleAds (7.2.0)
 
 DEPENDENCIES:
-  - "IvyiOSSdk/AIHelp (from `git@github.com:IvySdk/iOS.git`, tag `8.7.0`)"
-  - "IvyiOSSdk/Appsflyer (from `git@github.com:IvySdk/iOS.git`, tag `8.7.0`)"
-  - "IvyiOSSdk/Core (from `git@github.com:IvySdk/iOS.git`, tag `8.7.0`)"
-  - "IvyiOSSdk/Firebase (from `git@github.com:IvySdk/iOS.git`, tag `8.7.0`)"
-  - "IvyiOSSdk/Firebase+ (from `git@github.com:IvySdk/iOS.git`, tag `8.7.0`)"
-  - "IvyiOSSdk/Google (from `git@github.com:IvySdk/iOS.git`, tag `8.7.0`)"
+  - IvyiOSSdk/AIHelp (from `../`)
+  - IvyiOSSdk/Appsflyer (from `../`)
+  - IvyiOSSdk/Core (from `../`)
+  - IvyiOSSdk/Firebase (from `../`)
+  - "IvyiOSSdk/Firebase+ (from `../`)"
+  - IvyiOSSdk/Google (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -1178,12 +1178,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   IvyiOSSdk:
-    :git: "git@github.com:IvySdk/iOS.git"
-    :tag: 8.7.0
-
-CHECKOUT OPTIONS:
-  IvyiOSSdk:
-    :git: "git@github.com:IvySdk/iOS.git"
+    :path: "../"
     :tag: 8.7.0
 
 SPEC CHECKSUMS:
@@ -1255,6 +1250,6 @@ SPEC CHECKSUMS:
   UnityAds: 358547edbd4c923cd03462289b8813d0ef91999e
   VungleAds: 85eb3468e8a6dfcf86f2b2e7891181df426c0433
 
-PODFILE CHECKSUM: 39e3db6ad86896f4dbb3a241809b0d6973238042
+PODFILE CHECKSUM: 8336799cdf17b5ab376897b4d2eb45c1399a63cc
 
 COCOAPODS: 1.14.3

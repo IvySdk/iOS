@@ -23,6 +23,7 @@
 #import <IvyiOSSdk/SDKFirebaseDatabaseDelegate.h>
 #import <IvyiOSSdk/SDKInAppMessageDelegate.h>
 #import <IvyiOSSdk/SDKWebviewDelegate.h>
+#import <IvyiOSSdk/SDKAppsflyerDelegate.h>
 @interface SDKFacade : NSObject<SDKDelegate, SDKExtendDelegate, SDKRemoteConfigDelegate, SDKInAppMessageDelegate, WKScriptMessageHandler, WKNavigationDelegate>
 @property (nonatomic, nullable, strong, readonly) UIWindow *window;
 @property (nonatomic, nullable, strong, readonly) UIViewController *rootVC;
@@ -39,6 +40,7 @@
 @property (nonatomic, nullable, strong) id<SDKFirestoreDelegate> firestoreDelegate;
 @property (nonatomic, nullable, strong) id<SDKFirebaseDatabaseDelegate> firebaseDatabaseDelegate;
 @property (nonatomic, nullable, strong) id<SDKInAppMessageDelegate> inAppMessageDelegate;
+@property (nonatomic, nullable, strong) id<SDKAppsflyerDelegate> appsflyerDelegate;
 @property (nonatomic, nullable, strong, readonly) NSString *backHomeAdTag;
 @property (nonatomic, nullable, strong) NSString *gts;
 @property (nonatomic, nullable, strong) NSString *userId;
@@ -340,6 +342,8 @@
 -(void)logIvyEvent:(nullable NSString *)eventId;
 -(void)logIvyEvent:(nonnull NSString *)eventId withData:(nullable NSDictionary<NSString *, id> *) data;
 -(void)logEventToParfka:(nonnull NSString *)eventId withData:(nullable NSDictionary<NSString *, id> *) data;
+-(void)logFirebaseEvent:(nullable NSString *)eventId;
+-(void)logFirebaseEvent:(nonnull NSString *)eventId withData:(nullable NSDictionary<NSString *, id> *) data;
 -(void)trackScreen:(nonnull NSString*) screenClass screenName:(nonnull NSString*)screenName;
 
 -(void)logEvent:(nullable NSString *)eventId;
@@ -352,7 +356,7 @@
 -(void)logFinishAchievement:(nonnull NSString *)achievement;
 -(void)logFinishTutorial:(nonnull NSString *)tutorial;
 -(void)logRate:(CGFloat)star;
--(void)logAdRevenue:(nonnull NSString *)adClassName mediationType:(SDK_MEDIATION_TYPE)mType adType:(nonnull NSString *)adType adUnit:(nonnull NSString *)adUnit placement:(nonnull NSString *)placement country:(nonnull NSString *)country currency:(nonnull NSString *)currency value:(NSNumber * _Nonnull)value;
+-(void)logAdRevenue:(nonnull NSString *)adClassName mediationType:(SDK_MEDIATION_TYPE)mType adType:(nonnull NSString *)adType adUnit:(nonnull NSString *)adUnit placement:(nonnull NSString *)placement country:(nonnull NSString *)country currency:(nonnull NSString *)currency value:(NSNumber * _Nonnull)value precision:(int)precision;
 -(void)logAdClick:(nonnull NSString *)adType adPos:(nonnull NSString *)adPos platform:(nonnull NSString *)platform;
 -(void)logAdImpression:(nonnull NSString *)adType adPos:(nonnull NSString *)adPos platform:(nonnull NSString *)platform;
 -(void)logBuy:(nullable NSString *)itemName itemType:(nonnull NSString *)itemType count:(int)count price:(double)price;
@@ -427,6 +431,16 @@
 +(void)requestIDFA;
 + (BOOL)joinQQGroup:(nullable NSString *)groupUin key:(nullable NSString *)key;
 + (void)playAHAP:(nonnull NSString *)name inDirectory:(nullable NSString *)folder;
+
+//appsflyer
+- (void)onAppsflyerInitSuccess;
+- (void)onAppsflyerInitFail:(nullable NSString *)data;
+- (void)onAppsflyerAppOpenAttribution:(nullable NSDictionary *)attributionData;
+- (void)onAppsflyerAppOpenAttributionFailure:(nonnull NSError *)error;
+- (void)onAppsflyerConversionDataFail:(nonnull NSError *)error;
+- (void)onAppsflyerConversionDataSuccesss:(nullable NSDictionary *)installData;
+
+
 + (nonnull SDKFacade *) sharedInstance;
 //+(nullable UIWindow *)keyWindow;
 @end

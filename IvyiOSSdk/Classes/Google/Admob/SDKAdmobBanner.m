@@ -60,7 +60,7 @@
             adView.paidEventHandler = ^void(GADAdValue *_Nonnull adValue) {
                 __strong typeof(_self) self = _self;
                 GADBannerView *bannerView = (GADBannerView *)self->_adView;
-                [[SDKFacade sharedInstance] logAdRevenue:bannerView && bannerView.responseInfo.loadedAdNetworkResponseInfo ? bannerView.responseInfo.loadedAdNetworkResponseInfo.adNetworkClassName : @"admob" mediationType:SdkMediationNetworkTypeGoogleAdMob adType:@"banner" adUnit:self->_adId placement:self->_tag country:[SDKHelper getCountryCode].lowercaseString currency:adValue.currencyCode value:adValue.value];
+                [[SDKFacade sharedInstance] logAdRevenue:bannerView && bannerView.responseInfo.loadedAdNetworkResponseInfo ? bannerView.responseInfo.loadedAdNetworkResponseInfo.adNetworkClassName : @"admob" mediationType:SdkMediationNetworkTypeGoogleAdMob adType:@"banner" adUnit:self->_adId placement:self->_tag country:[SDKHelper getCountryCode].lowercaseString currency:adValue.currencyCode value:adValue.value precision:(int)adValue.precision];
             };
             GADRequest *request = [SDKAdmobRequest createRequest];
             [adView loadRequest:request];

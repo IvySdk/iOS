@@ -94,7 +94,7 @@
     __weak typeof(self) _self = self;
     _nativeAd.paidEventHandler = ^void(GADAdValue *_Nonnull adValue) {
         __strong typeof(_self) self = _self;
-        [[SDKFacade sharedInstance] logAdRevenue:self->_nativeAd && self->_nativeAd.responseInfo.loadedAdNetworkResponseInfo ? self->_nativeAd.responseInfo.loadedAdNetworkResponseInfo.adNetworkClassName : @"admob" mediationType:SdkMediationNetworkTypeGoogleAdMob adType:@"native" adUnit:self->_adId placement:self->_tag country:[SDKHelper getCountryCode].lowercaseString currency:adValue.currencyCode value:adValue.value];
+        [[SDKFacade sharedInstance] logAdRevenue:self->_nativeAd && self->_nativeAd.responseInfo.loadedAdNetworkResponseInfo ? self->_nativeAd.responseInfo.loadedAdNetworkResponseInfo.adNetworkClassName : @"admob" mediationType:SdkMediationNetworkTypeGoogleAdMob adType:@"native" adUnit:self->_adId placement:self->_tag country:[SDKHelper getCountryCode].lowercaseString currency:adValue.currencyCode value:adValue.value precision:(int)adValue.precision];
     };
     [self adLoaded: _nativeAd];
     DLog(@"[adlog] [tag:%@(%d)] [%@:adLoaded] [id:%@] [adapter:%@]", _tag, _index, NSStringFromClass(self.class), _adId, nativeAd.responseInfo.loadedAdNetworkResponseInfo?nativeAd.responseInfo.loadedAdNetworkResponseInfo.adNetworkClassName : @"admob");

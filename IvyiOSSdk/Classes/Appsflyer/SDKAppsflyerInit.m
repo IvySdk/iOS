@@ -28,11 +28,14 @@
             if (onComplete) {
                 onComplete();
             }
+            [[SDKFacade sharedInstance] onAppsflyerInitSuccess];
         } else {
             DLog(@"[init] Appsflyer init failure, please see the default.json analyse config.");
+            [[SDKFacade sharedInstance] onAppsflyerInitFail:nil];
         }
     } @catch (NSException *exception) {
         DLog(@"[init] Appsflyer: %@", exception.description);
+        [[SDKFacade sharedInstance] onAppsflyerInitFail: exception.description];
     } @finally {
     }
 }
@@ -57,15 +60,19 @@
 
 - (void)onAppOpenAttribution:(NSDictionary *)attributionData
 {
+    [[SDKFacade sharedInstance] onAppsflyerAppOpenAttribution:attributionData];
 }
 
 - (void)onAppOpenAttributionFailure:(NSError *)error
 {
+    [[SDKFacade sharedInstance] onAppsflyerAppOpenAttributionFailure:error];
 }
 
 - (void)onConversionDataFail:(nonnull NSError *)error {
+    [[SDKFacade sharedInstance] onAppsflyerConversionDataFail:error];
 }
 
 - (void)onConversionDataSuccess:(nonnull NSDictionary *)conversionInfo {
+    [[SDKFacade sharedInstance] onAppsflyerConversionDataSuccesss:conversionInfo];
 }
 @end
