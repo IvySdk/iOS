@@ -118,6 +118,7 @@
 #import "SDKVideo.h"
 #import "SDKVideoModule.h"
 #import "SDKAdDelegate.h"
+#import "SDKAppsflyerDelegate.h"
 #import "SDKCloudFunctionDelegate.h"
 #import "SDKDelegate.h"
 #import "SDKExtendDelegate.h"
